@@ -1,11 +1,17 @@
 {
   "name": "node-server-warmup",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "warmup any node server",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "jest"
+    "build": "tsc",
+    "test": "jest",
+    "pub": "tsc && npm publish"
   },
+  "files": [
+    "dist",
+    "types"
+  ],
   "keywords": [
     "warmup",
     "express",
@@ -21,6 +27,7 @@
     "@types/node": "^14.14.41",
     "eslint": "^7.24.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-prettier": "^3.4.0",
     "express": "^4.17.1",
@@ -30,10 +37,7 @@
     "koa": "^2.13.1",
     "light-my-request": "^4.4.1",
     "prettier": "^2.2.1",
-    "ts-jest": "^26.5.5"
-  },
-  "dependencies": {
-    "eslint-plugin-import": "^2.22.1",
+    "ts-jest": "^26.5.5",
     "typescript": "^4.2.4"
   }
 }
