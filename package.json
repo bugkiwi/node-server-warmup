@@ -1,0 +1,39 @@
+{
+  "name": "node-server-warmup",
+  "version": "0.0.1",
+  "description": "warmup any node server",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "warmup",
+    "express",
+    "koa",
+    "fastify"
+  ],
+  "author": "bugkiwi@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@koa/router": "^10.0.0",
+    "@types/jest": "^26.0.22",
+    "@types/koa": "^2.13.1",
+    "@types/node": "^14.14.41",
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "express": "^4.17.1",
+    "fastify": "^3.15.0",
+    "husky": "^6.0.0",
+    "jest": ">=26.0.0 <27.0.0-0",
+    "koa": "^2.13.1",
+    "light-my-request": "^4.4.1",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.5.5"
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.22.1",
+    "typescript": "^4.2.4"
+  }
+}

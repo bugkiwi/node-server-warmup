@@ -1,0 +1,19 @@
+curl 'https://m.stripe.com/6' \
+  -H 'authority: m.stripe.com' \
+  -H 'pragma: no-cache' \
+  -H 'cache-control: no-cache' \
+  -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"' \
+  -H 'dnt: 1' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36' \
+  -H 'content-type: text/plain;charset=UTF-8' \
+  -H 'accept: */*' \
+  -H 'origin: https://m.stripe.network' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'referer: https://m.stripe.network/' \
+  -H 'accept-language: zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7' \
+  -H 'cookie: m=00ccf20f-920b-4c72-ad77-2a418265eff217e697' \
+  --data-raw 'JTdCJTIybXVpZCUyMiUzQSUyMjE3MjE3Y2I2LTg3MWMtNGNmMS05YjMzLWE5MzUwMThmZWU1MDMzZDBkMyUyMiUyQyUyMnNpZCUyMiUzQSUyMjc1ZDVjNWFlLTFmYTYtNDU0Zi04MmQ5LWEzM2Q3ZmEyZGJmOWRlNjY5YSUyMiUyQyUyMnVybCUyMiUzQSUyMmh0dHBzJTNBJTJGJTJGWF92V09wWVF3MnlpbVB6YTJsZGlsc3NaMVZnbEFoNlYzaHhrVFRja20xNC54TnBaelhBT1gtZVI3bERwS3hLQ1RFYURBVWdfcm93Ri1rY3hmSGtDYno4LmcydTktaHFadkdJcVlKY1BsUGZ3SkFmLXYzUmd5S194MU5wcHpBbEExMk0lMkZIdHZnVlg1WDdMNlFOTVpKVWdObG5nLVVUanZ0bnFrTGJodkRtUTBBcHM0JTJGQ2lKN1F3a3UzQnNtX1JHUGpGS2pMU3V1N05BMXNtTDdSWXh5bVUxUG5FNCUyMiUyQyUyMnNvdXJjZSUyMiUzQSUyMm1vdXNlLXRpbWluZ3MtMTAlMjIlMkMlMjJkYXRhJTIyJTNBJTVCMTMwOTYlMkMxJTJDMCUyQzUlMkM0MSUyQzE4JTJDMSUyQzYlMkM3JTJDMTIlNUQlN0Q=' \
+  --compressed
