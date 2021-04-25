@@ -9,8 +9,8 @@
   "arrowParens": "avoid",
   "overrides": [
     {
-      "files": "LICENSE",
-      "options": { "parser": "markdown" }
+      "files": ".prettierrc",
+      "options": { "parser": "json" }
     }
   ]
 }

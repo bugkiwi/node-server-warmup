@@ -7,14 +7,18 @@
     "declaration": true,
     "esModuleInterop": true,
     "declarationDir": "types",
-    "outDir": "dist"
+    "outDir": "dist",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/types/*"]
+    }
   },
   "include": [
-    "src",
-    "types"
+    "src"
   ],
   "exclude": [
     "node_modules",
-    "test"
+    "test",
+    "src/types"
   ]
 }

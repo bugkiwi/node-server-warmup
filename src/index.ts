@@ -2,7 +2,7 @@
  * @file
  * @author gkiwi
  */
-import warmup from "./warmup";
-import fetch from "./fetch";
+import warmup from './warmup';
+import fetch from './fetch';
 
-export { warmup, fetch };
+export {warmup, fetch};
