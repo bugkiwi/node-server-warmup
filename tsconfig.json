@@ -6,12 +6,13 @@
     "sourceMap": false,
     "declaration": true,
     "esModuleInterop": true,
-    "declarationDir": "types",
+    "declarationDir": "dist",
     "outDir": "dist",
     "baseUrl": "./",
-    "paths": {
-      "*": ["src/types/*"]
-    }
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+    ]
   },
   "include": [
     "src"
@@ -19,6 +20,5 @@
   "exclude": [
     "node_modules",
     "test",
-    "src/types"
   ]
 }

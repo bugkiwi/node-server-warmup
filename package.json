@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "clean": "rm -rf dist;rm -rf types",
-    "build": "npm run clean;tsc",
+    "build": "npm run clean;tsc;cp -rf src/types dist/types;",
     "lint": "eslint '*/**/*.{js,ts}' --quiet --fix",
     "test": "jest",
     "pub": "set -e;npm run lint;npm run test;npm run build;npm publish;set +e"

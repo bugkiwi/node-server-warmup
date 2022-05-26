@@ -5039,7 +5039,7 @@ packages:
     dev: true
 
   /which/2.0.2:
-    resolution: {integrity: sha1-fGqN0KY2oDJ+ELWckobu6T8/UbE=}
+    resolution: {integrity: sha1-fGqN0KY2oDJ+ELWcdawsu6T8/UbE=}
     engines: {node: '>= 8'}
     hasBin: true
     dependencies:

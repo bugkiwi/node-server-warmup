@@ -3,7 +3,7 @@
  * @author gkiwi
  */
 import http, {RequestListener} from 'http';
-import {FastifyApplication, WarmupApplication} from 'node-server-warmup';
+import {FastifyApplication, WarmupApplication} from './types/node-server-warmup';
 
 const createServer = async (app: WarmupApplication): Promise<http.Server> => {
     let server;

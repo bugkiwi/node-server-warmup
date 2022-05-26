@@ -6,10 +6,9 @@ import fetch from './fetch';
 import createServer from './create-server';
 import {isFastify} from './utils/checkServer';
 import type {AddressInfo} from 'net';
-import type {RequestOptions} from 'http';
-import type {WarmupApplication, WarmupOption} from 'node-server-warmup';
+import type {WarmupApplication, WarmupOption, RequestOptions} from './types/node-server-warmup';
 
-const warmup = async (app: WarmupApplication, reqOptions: WarmupOption) => {
+const warmup = async (app: WarmupApplication, reqOptions: WarmupOption): Promise<unknown> => {
     if (isFastify(app)) {
         const fastifyWarmup = (await require('./warmup-fastify')).default;
         await fastifyWarmup(app, reqOptions);

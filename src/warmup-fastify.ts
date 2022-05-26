@@ -3,11 +3,11 @@
  * @author gkiwi
  * @refers https://github.com/fastify/fastify/issues/2411 - can't reopen fastify on new port;
  */
-import {FastifyApplication, WarmupOption} from 'node-server-warmup';
+import {FastifyApplication, WarmupOption} from './types/node-server-warmup';
 import type {InjectOptions} from 'light-my-request';
 import type * as http from 'http';
 
-const warmup = async (app: FastifyApplication, reqOptions: WarmupOption) => {
+const warmup = async (app: FastifyApplication, reqOptions: WarmupOption): Promise<void> => {
     if (typeof reqOptions === 'function') {
         await reqOptions((app as unknown) as http.Server);
     } else {

@@ -3,10 +3,11 @@
  * @author gkiwi
  */
 import * as http from 'http';
-import {IncomingMessage, RequestOptions} from 'http';
+import {IncomingMessage} from 'http';
 import {Socket} from 'node:net';
+import {RequestOptions} from './types/node-server-warmup';
 
-const fetch = async (option: RequestOptions | string | URL) => {
+const fetch = async (option: RequestOptions | string | URL): Promise<unknown> => {
     return new Promise((resolve, reject) => {
         const timer = setTimeout(() => reject('timeout'), 1000 * 30);
         const req = http.request(option, res => {
@@ -39,7 +40,9 @@ const fetch = async (option: RequestOptions | string | URL) => {
                 reject(e);
             });
         });
-        req.write('');
+        if (option && (option as RequestOptions).method === 'POST' && (option as RequestOptions).body) {
+            req.write(JSON.stringify((option as RequestOptions).body));
+        }
         req.end();
     });
 };
